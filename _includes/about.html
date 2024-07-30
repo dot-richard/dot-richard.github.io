@@ -1,0 +1,22 @@
+<section id="about">
+  <header>
+    <h1>À propos</h1>
+  </header>
+
+  {{ if site.author.image }}
+  <img width="150" height="150" src="{{ site.author.image }}"/>
+  {{ endif }}
+
+  <p>{{ site.author.description }}</p>
+  <p>{{ site.description }}</p>
+
+  <ul class="no-puce flex-row">
+    {% for link in site.author.links %}
+    <li>
+      <a href="{{ link.url }}" target="_blank">
+        <img width="50" src="{{ link.logo }}" alt="{{ link.logo }}"/>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

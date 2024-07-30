@@ -1,0 +1,166 @@
+---
+---
+
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "noscript";
+@import "code";
+
+// fonts
+
+html
+{
+  font-size: $font-size;
+}
+
+header,
+footer,
+nav,
+code,
+pre,
+{
+  font-family: $font-mono;
+}
+
+main {
+  font-family: $font-normal;
+}
+
+header,
+footer,
+nav
+{
+  font-weight: bold;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+h5 { font-size: 0.85rem; }
+h6 { font-size: 0.70rem; }
+
+// margins & paddings
+
+body,
+header *,
+footer *,
+nav *,
+{
+  margin: 0; padding: 0;
+}
+
+body > *
+{
+  padding: 0.5em 1em;
+}
+
+// colors
+
+body
+{
+  color: $text-light;
+  background: $background-primary;
+}
+
+main
+{
+  background: $background-secondary;
+  @include border-horizontals(2px, $color-primary)
+}
+
+// header title
+
+header
+{
+  *
+  {
+    display: inline-block;
+  }
+}
+
+#site-title
+{
+  color: $text-light;
+}
+
+// footer
+
+header,
+footer
+{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// images
+
+img
+{
+  border-radius: 4px;
+}
+
+a
+{
+  text-decoration: none;
+  color: $color-primary;
+  &:hover
+  {
+    cursor: pointer;
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+}
+
+.flex-row
+{
+  @include flex-row;
+}
+
+.no-puce
+{
+  list-style: "" inside;
+  padding: 0;
+}
+
+.nav-pages
+{
+  list-style: "" inside;
+  li::before
+  {
+    content: "/ ";
+    margin-left: 1em;
+  }
+  li:first-child::before
+  {
+    margin: 0;
+  }
+}
+
+.slash-list
+{
+  list-style: "" inside;
+  li::before
+  {
+    content: "/ ";
+    margin-left: 1em;
+  }
+  li:first-child::before
+  {
+    margin: 0;
+  }
+}
+
+.border-list {
+  list-style: "" inside;
+  padding: 0;
+
+  li
+  {
+    padding: 0.5em 0;
+    border-top: 2px solid $text-dark;
+  }
+}

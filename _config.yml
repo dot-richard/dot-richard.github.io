@@ -1,0 +1,70 @@
+title: dot-richard
+description: Un simple blog de dev.
+logo: ""
+url: https://dot-richard.github.io
+baseurl: ""
+lang: fr-FR
+
+author:
+  firstname: Richard
+  lastname: Kranich
+  fullname: Richard Kranich
+  shortname: Richard K
+  description: Je suis un développeur atypique et passionné.
+  email: k.richard.pro@pm.me
+  image: https://avatars.githubusercontent.com/u/39184474?v=4
+  links:
+    - url: https://github.com/dot-richard
+      logo: /assets/images/github-mark-white.png
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /:title/
+      comments: utterances
+
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      permalink: /drafts/:title/
+      layout: post
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jemoji
+
+sass:
+  sass_dir: _sass
+  style: compressed # 'expanded' ou 'compressed'
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+include:
+  - pages
+
+exclude:
+  - .tmp/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .bundle/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore

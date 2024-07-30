@@ -1,0 +1,222 @@
+/* Couleurs */
+$black: #111; /* 232 */
+$darkgrey: #333; /* 236 */
+$grey: #777; /* 242 */
+$white: #bbb; /* 250 */
+$red: #d70000; /* 160 */
+$darkred: #870000; /* 88 */
+$cyan: #00afaf; /* 44 */
+$yellow: #ffd700; /* 220 */
+
+.highlight {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+code {
+    font-family: $font-mono;
+    color: $white;
+    font-size: 0.75em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+pre code {
+  margin: 1em;
+}
+
+pre, code {
+  background-color: #000;
+}
+
+/*
+ * Rouge syntax highlighting
+ * */
+
+/* Normal text */
+.n
+{
+    color: $white;
+    // font-style: italic;
+}
+
+/* Comments */
+.c, /* Comment */
+.c1, /* Comment */
+.cm /* Comment.Multiline */
+{    color: $grey;
+    font-style: italic;
+}
+
+/* Errors */
+.err
+{
+    color: $white;
+    background-color: $red;
+    font-weight: bold;
+}
+
+/* Todo */
+.todo
+{
+    color: $black;
+    background-color: $yellow;
+    font-weight: bold;
+}
+
+/* Special */
+.k, /* Keyword */
+.kc, /* Keyword.Constant */
+.kd, /* Keyword.Declaration */
+.kn, /* Keyword.Namespace */
+.kp, /* Keyword.Pseudo */
+.kr, /* Keyword.Reserved */
+.kt, /* Keyword.Type */
+.kv /* Keyword.Variable */
+{
+    color: $white;
+    font-weight: bold;
+}
+
+/* Delimiters */
+.p, /* Punctuation */
+.d /* Punctuation.Delimiter */
+{
+    color: $white;
+}
+
+/* Characters */
+.s, /* Literal.String */
+.s1, /* Literal.String.Single */
+.s2 /* Literal.String.Double */
+{
+    color: $grey;
+    font-style: italic;
+}
+
+/* Constants */
+.no, /* Name.Constant */
+.nu, /* Literal.Number */
+.nm /* Literal.Number.Float */
+{
+    color: $cyan;
+}
+
+
+
+/* Numbers */
+.m /* Literal.Number */
+{
+    color: $cyan;
+}
+
+/* Booleans */
+.bp, /* Keyword.Type */
+.bl /* Keyword.Type.Bool */
+{
+    color: $cyan;
+}
+
+/* Statements */
+.k, /* Keyword */
+.kd, /* Keyword.Declaration */
+.kp, /* Keyword.Pseudo */
+.kr, /* Keyword.Reserved */
+.kv { /* Keyword.Variable */
+    color: $red;
+}
+
+/* Operators */
+.o, /* Operator */
+.op { /* Operator.Word */
+    color: $cyan;
+}
+
+/* Exceptions */
+.ex {
+    color: $cyan;
+    font-weight: bold;
+}
+
+/* Identifiers */
+.n, /* Name */
+.na, /* Name.Attribute */
+.nc, /* Name.Class */
+.nd, /* Name.Decorator */
+.nf, /* Name.Function */
+.nv { /* Name.Variable */
+    color: $white;
+    font-weight: bold;
+}
+
+/* Types */
+.kt, /* Keyword.Type */
+.t, /* Name.Tag */
+.tf { /* Keyword.Type.Type */
+    color: $white;
+    font-weight: bold;
+}
+
+/* Structures */
+.s, /* Literal.String */
+.s1, /* Literal.String.Single */
+.s2 { /* Literal.String.Double */
+    color: $white;
+    font-weight: bold;
+}
+
+/* Storage Classes */
+.kv, /* Keyword.Variable */
+.kn, /* Keyword.Namespace */
+.nc /* Keyword.Constant */
+{
+    color: $white;
+    font-weight: bold;
+}
+
+/* Typedefs */
+.td, /* Keyword.Type */
+.tf /* Keyword.Type.Type */
+{
+    color: $white;
+    font-weight: bold;
+}
+
+/* Preprocessors */
+.p, /* Punctuation */
+.pp, /* Punctuation.Parenthesis */
+.pr, /* Punctuation.Parameter */
+.pa /* Punctuation.Attribute */
+{
+    color: $red;
+    font-weight: bold;
+}
+
+/* Includes */
+.i, /* Keyword.Declaration */
+.in /* Keyword.Namespace */
+{
+    color: $red;
+    font-weight: bold;
+}
+
+/* Defines */
+.d, /* Punctuation.Delimiter */
+.de, /* Punctuation.Parameter */
+.dp /* Punctuation.Parenthesis */
+{
+    color: $red;
+    font-weight: bold;
+}
+
+/* Macros */
+.m, /* Literal.Number */
+.mc /* Literal.Number.Float */
+{
+    color: $red;
+    font-weight: bold;
+}
