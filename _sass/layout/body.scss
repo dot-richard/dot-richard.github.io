@@ -1,0 +1,10 @@
+body
+{
+  color: $text-light;
+  background: $background-primary;
+  margin: 0; padding: 0;
+
+  > * {
+    padding: 0.5em 1em;
+  }
+}

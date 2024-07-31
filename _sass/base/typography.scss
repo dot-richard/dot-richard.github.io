@@ -1,0 +1,41 @@
+html
+{
+  font-size: $font-size-default;
+  font-family: $font-normal;
+
+  @media (max-width: 600px) {
+    font-size: $font-size-small;
+  }
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    font-size: $font-size-medium;
+  }
+}
+
+code, pre {
+  font-family: $font-mono;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}

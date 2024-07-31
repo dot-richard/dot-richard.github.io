@@ -2,13 +2,14 @@
   <h1>À propos</h1>
 
   {{ if site.author.image }}
-  <img width="150" height="150" src="{{ site.author.image }}"/>
+  <img width="150" height="150" src="{{ site.author.image }}" alt="Image de {{ site.author.shortname }}" />
   {{ endif }}
 
   <p>{{ site.author.description }}</p>
   <p>{{ site.description }}</p>
+  <p><a href="mailto:{{ site.author.email }}">Email</a></p>
 
-  <ul class="no-puce flex-row">
+  <ul class="list-flex">
     {% for link in site.author.links %}
     <li>
       <a href="{{ link.url }}" target="_blank">

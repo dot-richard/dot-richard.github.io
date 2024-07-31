@@ -1,0 +1,34 @@
+/* Supprimer les marges et les espacements par défaut */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Réinitialiser les styles pour les éléments de bloc */
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl,
+pre, blockquote,
+figure, fieldset,
+table, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* Réinitialiser les styles pour les liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Réinitialiser les styles pour les images */
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,32 @@
+header {
+
+  @extend %flex-row-responsive;
+  justify-content: space-between;
+
+  * {
+    font-family: $font-mono;
+    word-break: keep-all;
+    display: inline-block;
+    margin: 0.5 0;
+    font-size: 1.5rem;
+  }
+
+  #site-title
+  {
+    color: $text-light;
+  }
+
+  nav {
+    ul {
+      @extend %list-no-puce;
+    }
+
+    li::before {
+      content: "/ ";
+    }
+
+    li:first-child::before {
+    }
+  }
+}
+

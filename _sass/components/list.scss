@@ -1,0 +1,15 @@
+/* Pour créer des listes à puces façon dossiers */
+
+.list-beauty {
+  @extend %list-no-puce;
+  li
+  {
+    padding: 0.5em 0;
+    border-top: 2px solid $accent-dark;
+  }
+}
+
+.list-flex {
+  @extend %list-no-puce;
+  @extend %flex-row-responsive;
+}

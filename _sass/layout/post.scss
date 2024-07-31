@@ -1,0 +1,28 @@
+article.post {
+  section {
+    h1, h2, h3, h4, h5, h6
+    ul, ol, blockquote {
+      margin-bottom: 1em;
+    }
+
+    p {
+      margin-bottom: 0.5em;
+    }
+
+    ul, ol {
+      margin-bottom: 1em;
+      padding-left: 1.5em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    blockquote {
+      padding-left: 1em;
+      border-left: 2px solid $accent-dark;
+      font-style: italic;
+    }
+  }
+}
+

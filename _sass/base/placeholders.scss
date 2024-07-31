@@ -1,0 +1,21 @@
+/* flex row responsive */
+
+%flex-row-responsive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* list sans puce */
+
+%list-no-puce {
+  list-style: "" inside;
+  padding: 0;
+  margin: 0;
+}
+

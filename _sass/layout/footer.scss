@@ -1,0 +1,10 @@
+footer {
+  @extend %flex-row-responsive;
+
+  font-family: $font-mono;
+  justify-content: space-between;
+
+  * {
+    font-size: 1rem;
+  }
+}
